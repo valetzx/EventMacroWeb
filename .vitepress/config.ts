@@ -23,7 +23,7 @@ export default defineConfig({
   themeConfig: {
     nav,
     socialLinks: [
-      { icon: "github", link: "" },
+      { icon: "github", link: "https://github.com/valetzx/EventMacroWeb" },
     ],
     footer: {
       message: '欢迎加入付费交流群：856185460',
