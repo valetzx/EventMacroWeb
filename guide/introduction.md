@@ -122,7 +122,6 @@ sleep(80) #等待4秒
 closegui()
 ```
 
-
 ## 脚本示例
 这个视频中的脚本 https://www.bilibili.com/video/bv1Cd4y1g7Av
 ```
