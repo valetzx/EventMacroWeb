@@ -144,41 +144,44 @@ stop(test)
 ```
 
 ## 按键列表
+
+### 以下列表中文为描述，括号中为默认按键，使用栗子参考 动作列表3
+
 ```
-key.attack:key.mouse.left
-key.use:key.mouse.right
-key.forward:key.keyboard.w
-key.left:key.keyboard.a
-key.back:key.keyboard.s
-key.right:key.keyboard.d
-key.jump:key.keyboard.space
-key.sneak:key.keyboard.left.shift
-key.sprint:key.keyboard.unknown
-key.drop:key.keyboard.q
-key.inventory:key.keyboard.e
-key.chat:key.keyboard.unknown
-key.playerlist:key.keyboard.tab
-key.pickItem:key.mouse.middle
-key.command:key.keyboard.enter
-key.socialInteractions:key.keyboard.unknown
-key.screenshot:key.keyboard.unknown
-key.togglePerspective:key.keyboard.r
-key.smoothCamera:key.keyboard.unknown
-key.fullscreen:key.keyboard.unknown
-key.spectatorOutlines:key.keyboard.unknown
-key.swapOffhand:key.keyboard.unknown
-key.saveToolbarActivator:key.keyboard.unknown
-key.loadToolbarActivator:key.keyboard.unknown
-key.advancements:key.keyboard.l
-key.hotbar.1:key.keyboard.1
-key.hotbar.2:key.keyboard.2
-key.hotbar.3:key.keyboard.3
-key.hotbar.4:key.keyboard.4
-key.hotbar.5:key.keyboard.5
-key.hotbar.6:key.keyboard.6
-key.hotbar.7:key.keyboard.7
-key.hotbar.8:key.keyboard.8
-key.hotbar.9:key.keyboard.9
-key.meteor-client.open-gui:key.keyboard.right.shift
-key.meteor-client.open-commands:key.keyboard.period
+key.attack 攻击键（鼠标右键）
+key.use 使用键（鼠标左键）
+key.forward 前进键（键盘W）
+key.left（键盘A）
+key.back（键盘S）
+key.right（键盘D）
+key.jump 跳跃键（键盘空格）
+key.sneak 下蹲键（左SHIFT）
+key.sprint 加速键
+key.drop 丢弃键（键盘Q）
+key.inventory 背包键（键盘E）
+key.chat 聊天键（键盘T）
+key.playerlist 玩家列表（TAB）
+key.pickItem 选取方块（鼠标中键）
+key.command 指令键（键盘/）
+key.socialInteractions :key.keyboard.unknown
+key.screenshot :key.keyboard.unknown
+key.togglePerspective :key.keyboard.r
+key.smoothCamera :key.keyboard.unknown
+key.fullscreen :key.keyboard.unknown
+key.spectatorOutlines :key.keyboard.unknown
+key.swapOffhand :key.keyboard.unknown
+key.saveToolbarActivator :key.keyboard.unknown
+key.loadToolbarActivator :key.keyboard.unknown
+key.advancements 进度键（键盘L）
+key.hotbar.1 快捷键1（键盘1）
+key.hotbar.2 快捷键2（键盘2）
+key.hotbar.3 快捷键3（键盘3）
+key.hotbar.4 快捷键4（键盘4）
+key.hotbar.5 快捷键5（键盘5）
+key.hotbar.6 快捷键6（键盘6）
+key.hotbar.7 快捷键7（键盘7）
+key.hotbar.8 快捷键8（键盘8）
+key.hotbar.9 快捷键9（键盘9）
+key.meteor-client.open-gui 彗星打开GUI键（右SHIFT）
+key.meteor-client.open-commands 彗星指令键（.）
 ```
