@@ -128,7 +128,7 @@ closegui()
 ```
 
 ## 脚本示例
-这个视频中的脚本 https://www.bilibili.com/video/bv1Cd4y1g7Av
+这个视频中的脚本 https://www.bilibili.com/video/bv1Cd4y1g7Av （老1.0版本，2.0不适用）
 ```
 Event BackpackFull()
 say(#stop)
