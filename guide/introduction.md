@@ -12,9 +12,7 @@ https://pigeonpig.lanzoul.com/b00q3hp2j   密码:piggy
 
 ### 脚本默认存放路径为：<游戏版本>\.minecraft\EventMacro\Macros
 ### 命名规则为：名字.macro 
-### 使用" \runmacro 名字 " 挂载脚本
-### 使用" \stopmacro 名字 " 取消脚本
-### 使用" \macrolist " 查看已挂载的脚本列表
+### 按下键盘 `\` （反斜杠）键，调出2.0 GUI窗口
 
 脚本分为 **事件部分** 和 **动作部分**
 在脚本中可以使用#作为注释，#所在的行会被忽略
@@ -30,12 +28,14 @@ Event BackpackFull()
 
 2. 当 副手存在 xx物品 <物品数量> 时 执行 xx动作
 ```
-Event OffHandItem()
+Event OffHandItem(steak,5) #当副手steak是5时
 ```
 
 3. 当 玩家等级 大于等于小于 <等级> 时 执行
 ```
-Event Level()
+Event Level(10,<) #当等级小于10级时
+Event Level(30,=) #当等级等于30级时
+Event Level(40,>) #当等级大于40级时
 ```
 
 ## B 动作列表
@@ -87,7 +87,7 @@ moveitem(backpackall) #将背包的物品全部放入箱子
 7. 点击箱子中的*某一格
 ```
 #有两个参数 slot 是格子 name 是物品名字，默认为左键
-clickslot(slot,29) #点击第29格
+clickslot(slot,29) #点击第29格(箱子左上角为第0格)
 clickslot(name,猪猪) #点击物品名字为 猪猪 的那一格
 ```
 
@@ -122,7 +122,7 @@ run(level) #挂起文件名为 level.marco 的宏脚本
 sleep(80) #等待4秒
 ```
 
-4. 关闭容器GUI
+4. 关闭容器GUI（箱子，工作台等）
 ```
 closegui()
 ```
@@ -147,6 +147,8 @@ say(#mine minecraft:deepslate_diamond_ore diamond_ore)
 say(\runmacro main)
 stop(test)
 ```
+
+### 后面应该会放出更多2.0脚本
 
 ## 按键列表
 
