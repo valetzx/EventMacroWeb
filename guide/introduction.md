@@ -12,7 +12,7 @@ https://pigeonpig.lanzoul.com/b00q3hp2j   密码:piggy
 
 ### 脚本默认存放路径为：<游戏版本>\.minecraft\EventMacro\Macros
 ### 命名规则为：名字.macro 
-### 按下键盘 `\` （反斜杠）键，调出2.0 GUI窗口
+### 按下键盘 `\` (反斜杠) 键，调出 2.0 GUI 窗口
 
 脚本分为 **事件部分** 和 **动作部分**
 在脚本中可以使用#作为注释，#所在的行会被忽略
