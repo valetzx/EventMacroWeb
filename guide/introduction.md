@@ -112,12 +112,17 @@ dropitem(name,圆石) #丢出叫圆石的物品
 stop(level) #停止文件名为 level.marco 的宏脚本
 ```
 
-2. 等待 xxx刻（游戏刻20tick=1s）
+2. 挂起宏运行 Run(宏文件名字)
+```
+run(level) #挂起文件名为 level.marco 的宏脚本
+```
+
+3. 等待 xxx刻（游戏刻20tick=1s）
 ```
 sleep(80) #等待4秒
 ```
 
-3. 关闭容器GUI
+4. 关闭容器GUI
 ```
 closegui()
 ```
