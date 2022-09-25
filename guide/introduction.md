@@ -155,8 +155,8 @@ stop(test)
 ### 以下列表中文为描述，括号中为默认按键，使用栗子参考 动作列表3
 
 ```
-key.attack 攻击键（鼠标右键）
-key.use 使用键（鼠标左键）
+key.attack 攻击键（鼠标左键）
+key.use 使用键（鼠标右键）
 key.forward 前进键（键盘W）
 key.left（键盘A）
 key.back（键盘S）
