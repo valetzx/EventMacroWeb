@@ -128,7 +128,6 @@ closegui()
 ```
 
 ## 脚本示例
-这个视频中的脚本 https://www.bilibili.com/video/bv1Cd4y1g7Av （老1.0版本，2.0不适用）
 ```
 Event BackpackFull()
 say(#stop)
@@ -144,7 +143,6 @@ closegui()
 command(home mine)
 sleep(10)
 say(#mine minecraft:deepslate_diamond_ore diamond_ore)
-say(\runmacro main)
 stop(test)
 ```
 
