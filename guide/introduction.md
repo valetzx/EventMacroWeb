@@ -31,11 +31,21 @@ Event BackpackFull()
 Event OffHandItem(steak,5) #当副手steak是5时
 ```
 
-3. 当 玩家等级 大于等于小于 <等级> 时 执行
+3. 当 玩家等级 大于等于小于 <等级> 时 执行 
 ```
 Event Level(10,<) #当等级小于10级时
 Event Level(30,=) #当等级等于30级时
 Event Level(40,>) #当等级大于40级时
+```
+
+4. 当 玩家到达 (x,y,z) 坐标时 执行 xx动作
+```
+Event Pos(x,y,z) #当到达 xyz 坐标时
+```
+
+5. 当 目标方块为 xxx 时 
+```
+Event TargetBlock(minecraft:grass) #当指向草方块时执行宏 
 ```
 
 ## B 动作列表
