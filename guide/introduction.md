@@ -128,8 +128,10 @@ leavegame(血量过低) #退出时显示'血量过低'
 
 ### 10. 设置玩家视角
 ```
-SetYaw()
-SetPitch()
+#这个具体可以看f3的 Facing 一行
+#Facing：east (-90/90)
+SetYaw(-90) #设置视角水平角度
+SetPitch(90) #设置视角垂直角度
 ```
 
 ## C 判断
