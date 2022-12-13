@@ -41,7 +41,7 @@ Event Level(40,>) #当等级大于40级时
 
 ### 4. 当 玩家到达 (x,y,z) 坐标时 执行 xx动作
 ```
-Event Pos(x,y,z) #当到达 xyz 坐标时
+Event onPos(x,y,z) #当到达 xyz 坐标时
 ```
 
 ### 5. 当 目标方块为 xxx 时 
