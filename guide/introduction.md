@@ -21,36 +21,46 @@ https://pigeonpig.lanzoul.com/b00q3hp2j   密码:piggy
 非注释和事件行会被认为是动作，动作的具体内容请看动作列表。
 
 ## A 事件列表
-1. 当 玩家背包满时 
+
+### 1. 当 玩家背包满时 
 ```
 Event BackpackFull()
 ```
 
-2. 当 副手存在 xx物品 <物品数量> 时 执行 xx动作
+### 2. 当 副手存在 xx物品 <物品数量> 时 执行 xx动作
 ```
 Event OffHandItem(steak,5) #当副手steak是5时
 ```
 
-3. 当 玩家等级 大于等于小于 <等级> 时 执行 
+### 3. 当 玩家等级 大于等于小于 <等级> 时 执行 
 ```
 Event Level(10,<) #当等级小于10级时
 Event Level(30,=) #当等级等于30级时
 Event Level(40,>) #当等级大于40级时
 ```
 
-4. 当 玩家到达 (x,y,z) 坐标时 执行 xx动作
+### 4. 当 玩家到达 (x,y,z) 坐标时 执行 xx动作
 ```
 Event Pos(x,y,z) #当到达 xyz 坐标时
 ```
 
-5. 当 目标方块为 xxx 时 
+### 5. 当 目标方块为 xxx 时 
 ```
 Event TargetBlock(minecraft:grass) #当指向草方块时执行宏 
 ```
 
+### 6. 当玩家血量 xxx 时
+```
+Event Health() #当血量低于10(五颗心)时触发
+Event Health(15) 当血量低于15(七颗半心)时触发
+Event Health(15,>) 当血量高于15(七颗半心)时触发
+Event Health(15,=) 当血量等于15(七颗半心)时触发
+Event Health(15,>=) 当血量大于等于于15(七颗半心)时触发
+```
+
 ## B 动作列表
 
-1. 说话 say 内容
+### 1. 说话 say 内容
 ```
 #栗子1：说话（需要使用原版指令请使用动作2）
 say(/help 1) #说出内容 公屏可见（/help 1）
@@ -58,7 +68,7 @@ say(/help 1) #说出内容 公屏可见（/help 1）
 say(#mine diamond_ore) #自动挖掘钻石矿石
 ```
 
-2. 执行 xxx 指令
+### 2. 执行 xxx 指令
 ```
 #栗子1：切换创造模式
 command(gamemode 1)
@@ -66,7 +76,7 @@ command(gamemode 1)
 command(login xxxxx)
 ```
 
-3. 控制按键（非键盘）
+### 3. 控制按键（非键盘）
 ```
 #true为按下 false为松开
 setkeypressed(true,key.attack) #按下攻击键（左键）
@@ -76,34 +86,32 @@ setkeypressed(false,key.forward) #松开前进键（W）
 #更多按键可用查看下面的按键列表
 ```
 
-4. 玩家 走到xyz坐标
+### 4. 玩家 走到xyz坐标
 ```
 say(#goto x y z) #调用baritone去往<x y z>坐标
 ```
 
-5. 取出 <坐标>容器中 的物品
+### 5. 取出 <坐标>容器中 的物品
 ```
 #这个动作有三个参数 MoveItem()
 moveitem(chest) #将箱子的物品放入背包
 ```
 
-6. 将 背包中的物品 放入容器
+### 6. 将 背包中的物品 放入容器
 ```
 #这个动作有三个参数 MoveItem()
 moveitem(backpack) #将背包里的物品放入箱子（不放快捷栏）
 moveitem(backpackall) #将背包的物品全部放入箱子
 ```
 
-7. 点击箱子中的*某一格
+### 7. 点击箱子中的*某一格
 ```
 #有两个参数 slot 是格子 name 是物品名字，默认为左键
 clickslot(slot,29) #点击第29格(箱子左上角为第0格)
 clickslot(name,猪猪) #点击物品名字为 猪猪 的那一格
 ```
 
-注意！数格子是从0开始数！！！
-
-8. 丢出背包内的物品
+### 8. 丢出背包内的物品
 ```
 #这个动作有三个参数，参考上面的描述
 dropitem(backpack) #丢出背包中的物品（不丢快捷栏）
@@ -112,27 +120,39 @@ dropitem(name,Cobblestone) #丢出指定名字物品
 dropitem(name,圆石) #丢出叫圆石的物品
 ```
 
+### 9. 退出 服务器 / 存档
+```
+leavegame()
+leavegame(血量过低) #退出时显示'血量过低'
+```
+
+### 10. 设置玩家视角
+```
+SetYaw()
+SetPitch()
+```
+
 ## C 判断
-1. 当 玩家看着的方块为 xxx 时 执行 xx 动作
+1. 空
 
 
 ## D 其他
-1. 停止宏运行 Stop(宏文件名字)
+### 1. 停止宏运行 Stop(宏文件名字)
 ```
 stop(level) #停止文件名为 level.marco 的宏脚本
 ```
 
-2. 挂起宏运行 Run(宏文件名字)
+### 2. 挂起宏运行 Run(宏文件名字)
 ```
 run(level) #挂起文件名为 level.marco 的宏脚本
 ```
 
-3. 等待 xxx刻（游戏刻20tick=1s）
+### 3. 等待 xxx刻（游戏刻20tick=1s）
 ```
 sleep(80) #等待4秒
 ```
 
-4. 关闭容器GUI（箱子，工作台等）
+### 4. 关闭容器GUI（箱子，工作台等）
 ```
 closegui()
 ```
