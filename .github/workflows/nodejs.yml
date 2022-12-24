@@ -7,10 +7,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Release
-      run: 
-          ls ./tmp && ls -a
-
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
