@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: valetzx/EventMacroWeb
         TARGET_BRANCH: dist
-        BUILD_SCRIPT: yarn && yarn build && cp -r ./tmp/release/ ./.vitepress/dist/ && rm -rf tmp
+        BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: ./.vitepress/dist
