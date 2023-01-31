@@ -4,6 +4,8 @@
 
 ### 第一步：下载MOD（1.19.2Fabric）
 
+ 蓝奏：https://pigeonpig.lanzoul.com/b00q3hp2j 密码:piggy
+
 ### 第二步：安装MOD
 
 使用猪猪下载器（或在群内）下载全量包解压后，打开启动器，选择 `1.19.2-Meteor` ，点击 `版本设置` 
