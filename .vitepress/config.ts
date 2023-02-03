@@ -11,6 +11,10 @@ const defaultSidebar = [
   {
     text:"常见问题",
     link: "/guide/qa",
+  },
+  {
+    text: "更新日志",
+    link: "/guide/update",
   }
 ]
 const nav = [
