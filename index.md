@@ -22,10 +22,6 @@ hero:
     - theme: alt
       text: 常见问题
       link: /guide/qa
-    - theme: alt
-      text: 更新日志
-      link: /guide/update
-    
 
 features:
   - title: 支持的游戏版本
