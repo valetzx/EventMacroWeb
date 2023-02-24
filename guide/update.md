@@ -5,6 +5,7 @@
 ```
 为clickslot增加了左右键点击功能
 eg. 
+	clickslot(slot,0,PICKUP,0) 用左键点击第1个槽位
 	clickslot(slot,0,PICKUP,1) 用右键点击第1个槽位
 	clickslot(slot,0,PICKUP,2) 用中键点击第1个槽位
 ```
@@ -26,7 +27,7 @@ eg.
 
 例子：
 clickslot(slot,0,throw) #扔出第一个格子中的一个物品
-clickslot(slot,0,throw) #扔出第一个格子中的全部物品
+clickslot(slot,0,throw_all) #扔出第一个格子中的全部物品
 服务器的箱子菜单推荐使用 pickup
 ```
 
