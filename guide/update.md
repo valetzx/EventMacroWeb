@@ -1,5 +1,14 @@
 # 更新日志
 
+## 2.8.2 (1.19.3)
+
+```
+为clickslot增加了左右键点击功能
+eg. 
+	clickslot(slot,0,PICKUP,1) 用右键点击第1个槽位
+	clickslot(slot,0,PICKUP,2) 用中键点击第1个槽位
+```
+
 ## 2.7.0 (1.19.3)
 
 ```
