@@ -25,7 +25,7 @@ hero:
 
 features:
   - title: 支持的游戏版本
-    details: 支持1.16-1.19所有fabric版本（最新）/ 后续会跟进forge版本。
+    details: 支持1.16-1.20所有fabric版本（最新）/ 后续会跟进forge版本。
   - title: 支持脚本热加载
     details: 无需关闭游戏，甚至退出世界，实时编写宏，快速查看宏脚本效果。
   - title: 支持扩展与联动
