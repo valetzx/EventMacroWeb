@@ -19,3 +19,25 @@ say(背包满哩)
 run(level0)
 stop(level1)
 ```
+
+## Q：如何自动附魔？
+
+```
+#本内容块写在 enchant.macro 文件中
+#当目标方块为附魔台时执行，
+#请在快捷栏1号位放青金石2号位放书
+Event TargetBlock(minecraft:enchanting_table)
+setkeypressed(true,key.use)
+sleep(10)
+setkeypressed(false,key.use)
+sleep(10)
+clickslot(slot,30,QUICK_MOVE)
+sleep(2)
+clickslot(slot,1,SWAP)
+sleep(2)
+ClickButton(0)
+clickslot(slot,1,SWAP)
+sleep(10)
+closegui()
+stop(enchant)
+```
