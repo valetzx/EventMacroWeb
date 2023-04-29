@@ -2,7 +2,7 @@
 
 ## 未申请白名单的
 
-### 第一步：下载MOD（1.19.2Fabric）
+### 第一步：下载MOD（对应版本Fabric）
 
  蓝奏：https://pigeonpig.lanzoul.com/b00q3hp2j 密码:piggy
 
