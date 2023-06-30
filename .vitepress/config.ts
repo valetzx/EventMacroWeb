@@ -30,7 +30,7 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/valetzx/EventMacroWeb" },
     ],
     footer: {
-      message: '欢迎加入付费交流群：856185460',
+      message: '欢迎加入付费交流群：856185460 / 671626979',
       copyright: "Copyright © 2022-Present EventMacro",
     },
     lastUpdatedText: "Last Updated"
