@@ -4,8 +4,8 @@
 
 ```
 更新到了mc版本1.20.1
-重写了gui部分
-支持读取文件夹
+重写了 gui 部分
+支持读取 Macros 中的文件夹
 修改 stop()不填参数将默认结束本身
 增加 message() doing
 增加 playerExist() Event
